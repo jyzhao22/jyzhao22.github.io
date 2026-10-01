@@ -1,0 +1,36 @@
+/* Question box banner aligned with the main content column. */
+.poster-interest {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25em;
+  width: 100%;
+  height: 48px;
+  padding: 6px 16px;
+  background: #edf7f2;
+  border-bottom: 1px solid #d3e8dd;
+  color: #315c49;
+}
+.poster-interest .button.primary {
+  background: #297b62;
+  border-color: #297b62;
+  color: #fff !important;
+  height: 34px;
+  line-height: 30px;
+  padding: 0 1.25em;
+  white-space: nowrap;
+}
+.poster-interest .button.primary:hover { background: #226650; border-color: #226650; }
+.poster-interest .button:focus-visible { outline: 3px solid #297b62; outline-offset: 4px; }
+@media screen and (min-width: 1281px) {
+  .poster-interest { margin-left: 35%; width: 65%; }
+}
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+  .poster-interest { margin-left: 30%; width: 70%; }
+}
+@media screen and (max-width: 480px) {
+  .poster-interest { gap: .75em; font-size: .9em; }
+}
